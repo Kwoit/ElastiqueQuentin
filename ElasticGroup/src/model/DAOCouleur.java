@@ -108,8 +108,8 @@ public class DAOCouleur implements DAO<Couleur> {
 		ArrayList<Couleur> listeColor = new ArrayList<Couleur>();
 
 		String requete = "SELECT * FROM couleur ORDER BY ID_COULEUR";
-		int i = 0;
-		System.out.println(i);
+
+
 		try {
 
 			Statement stmt = ConnectBDD.getConnect().createStatement();
@@ -131,10 +131,9 @@ public class DAOCouleur implements DAO<Couleur> {
 				}
 				
 				listeColor.add(new Couleur(result.getInt("ID_COULEUR"), result.getString("INTITULE_COULEUR"),HexaTotal));
-				i++;
-				System.out.println(i);
+
 			}
-			
+			System.out.println(listeColor.size() + "Couleurs créées.");
 			// puis fermeture de la connexion
 			stmt.close();
 			
