@@ -70,7 +70,7 @@ public class FrontController extends HttpServlet {
 		String cmd = request.getParameter("cmd");
 				
 		String urlSuivante = null;
-		
+		System.out.println(1 + urlSuivante);
 		if (cmd != null) {
 			//Instantiation de la class correspondante a la commande dmde
 			try {
@@ -86,7 +86,7 @@ public class FrontController extends HttpServlet {
 		}else {
 			urlSuivante = "/WEB-INF/jsp/login.jsp";
 		}
-		
+		System.out.println(urlSuivante);
 		//forward vers l'url donné par l'action
 		request.getRequestDispatcher(urlSuivante).forward( request, response );
 	}

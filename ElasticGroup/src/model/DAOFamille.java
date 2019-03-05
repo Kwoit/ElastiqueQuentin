@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import bean.Famille;
+import bean.SSFamille;
 
 /**
  * @author nico
@@ -94,7 +95,7 @@ public class DAOFamille implements DAO<Famille> {
 
 		ArrayList<Famille> listeFam = new ArrayList<Famille>();
 
-		String requete = "SELECT ID_FAMILLE FROM famille ORDER BY ID_FAMILLE";
+		String requete = "SELECT * FROM famille ORDER BY ID_FAMILLE";
 
 		try {
 
@@ -104,9 +105,10 @@ public class DAOFamille implements DAO<Famille> {
 
 			// tant que...
 			while (result.next()) {
-				listeFam.add(this.find(result.getInt("ID_FAMILLE")));
+				listeFam.add(new Famille(result.getInt("ID_FAMILLE"), result.getString("NOM_FAMILLE")));
 
 			}
+			System.out.println(listeFam.size() + " Familles créées.");
 			// puis fermeture de la connexion
 			stmt.close();
 			System.out.println("Fermeture connexion ok");
