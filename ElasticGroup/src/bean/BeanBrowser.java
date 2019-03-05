@@ -54,8 +54,8 @@ public class BeanBrowser {
 		//	si l'un des 3 premieres est non null il faut un select produit, 
 		//	si l'un des 3 premiers et le 4 sont non null il faut  un AND entre les deux
 			String s = indiceBlocFiltre.getINSQL();
-			String sw = "WHERE";
-			String st = " ID_PRODUIT IN (SELECT ID_PRODUIT FROM produit WHERE ";
+			String sWhere = "WHERE";
+			String sRequeteProduit = " ID_PRODUIT IN (SELECT ID_PRODUIT FROM produit WHERE ";
 			
 			if (!s.equals(null)) {
 				
@@ -63,9 +63,9 @@ public class BeanBrowser {
 						||	indiceBlocFiltre.getIdBlocFiltre()== 2 
 						||	indiceBlocFiltre.getIdBlocFiltre()== 3 )
 				{
-					requete += sw + st ;
-					st = "";
-					sw = "";
+					requete += sWhere + sRequeteProduit ;
+					sRequeteProduit = "";
+					sWhere = "";
 				}
 				
 				switch (	indiceBlocFiltre.getIdBlocFiltre()) {
@@ -74,12 +74,12 @@ public class BeanBrowser {
 	                  		break;
 				case 1:		requete += "ID_SSFAMILLE " + s;
               				break;
-				case 2:		requete += "ID_MARQUE " + s;
+				case 2:		requete += "ID_FABRICANT " + s;
               				break;
-				case 3:		if (st.equals("")) {
+				case 3:		if (sRequeteProduit.equals("")) {
 								requete += " AND ";
 							}
-							requete += sw + "ID_COULEUR " + s;
+							requete += sWhere + "ID_COULEUR " + s;
 							break;
 				default:	break;
 	            }
