@@ -3,10 +3,7 @@ package bean;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.DAOCouleur;
-import model.DAOFamille;
 import model.DAOMarque;
-import model.DAOSSFamille;
 import service.ServiceFiltre;
 
 public class BeanBrowser {
@@ -15,8 +12,6 @@ public class BeanBrowser {
 	//Filtre Bean
 	private List<BlocFiltre> listBlocFiltre;
 	
-	//Article Filtré Bean
-	private int resultatCountFiltre; 
 	private List<Article> listArticle;
 	
 	//Constructeur
