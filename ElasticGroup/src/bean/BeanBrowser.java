@@ -44,6 +44,7 @@ public class BeanBrowser {
 	}
 	
 	@SuppressWarnings("unchecked")
+	//Ceci est un commentaire de Guillaume
 	public String getrequeteFiltre(List<BlocFiltre> listBlocFiltre) {
 		
 		String requete = "SELECT * FROM coloriser ";
