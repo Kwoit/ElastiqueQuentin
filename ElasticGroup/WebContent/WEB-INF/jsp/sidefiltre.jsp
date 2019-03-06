@@ -11,6 +11,7 @@
 			<legend><%= indiceBlocFiltre.getLibelleBlocFiltre() %></legend>
 			
 			<% 	for (Filtre indiceFiltre : indiceBlocFiltre.getListFiltre()) { %>
+					<div>
 					<input type="checkbox"
 					id="<%= indiceBlocFiltre.getLibelleBlocFiltre()+ " " +indiceFiltre.getLibelleFiltre() %>"
 					name="<%= indiceBlocFiltre.getLibelleBlocFiltre()+ " " +indiceFiltre.getLibelleFiltre() %>"
@@ -27,6 +28,7 @@
 					<%= indiceFiltre.getLibelleFiltre() %>
 				</label> <br>
 			<%	} %>
+			</div>
 			</fieldset>
 	<%	} %>
 </form>

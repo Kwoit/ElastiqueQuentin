@@ -5,12 +5,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
+		<link rel='stylesheet' type='text/css' href='Style.css' />
 		<%@page import="bean.BeanBrowser" %>
 		<%@page import="service.Service" %>
 	</head>
-	<body>
+	<body id="login">
+		<div id="header">
 			<%@ include file="header.jsp" %>
-	        <h1>Veuillez vous authentifier !</h1><br/>
+		</div>
+	    <div>
+	    	<h3>Veuillez vous authentifier</h1><br/>
 	    
 	        <form method="post" action="frontcontroller?cmd=CommandLogin" >
 	        	
@@ -26,6 +30,7 @@
 	            <%} %>
 	            <br/>
 	            <input name='btnConnect' type='submit' value='Se connecter'/> <br/>
-	        </form>     
+	        </form>   
+	        </div>  
 	</body>
 </html>
