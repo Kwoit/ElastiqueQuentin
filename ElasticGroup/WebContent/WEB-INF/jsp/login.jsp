@@ -14,7 +14,7 @@
 			<%@ include file="header.jsp" %>
 		</div>
 	    <div>
-	    	<h3>Veuillez vous authentifier</h1><br/>
+	    	<h1>Veuillez vous authentifier</h1><br/>
 	    
 	        <form method="post" action="frontcontroller?cmd=CommandLogin" >
 	        	
