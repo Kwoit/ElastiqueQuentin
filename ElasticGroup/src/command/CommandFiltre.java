@@ -11,8 +11,10 @@ public class CommandFiltre implements ICommand {
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+		System.out.println("dans le commandFiltre");
+		
+		return "/WEB-INF/jsp/catalogue.jsp";	
+		}
 
 }

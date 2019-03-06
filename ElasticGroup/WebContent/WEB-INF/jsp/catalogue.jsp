@@ -4,9 +4,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Catalogue Elastiques</title>
+		<link rel='stylesheet' type='text/css' href='Style.css' />
 	</head>
-	<body>
+	<body id="catalogue">
 		<div id="header">
 			<%@ include file="header.jsp" %>
 		</div>

@@ -78,7 +78,7 @@ public class DAOSSFamille implements DAO<SSFamille> {
 		
 		ArrayList <SSFamille> listeSousFam = new ArrayList<SSFamille>();
 		
-		String requete = "SELECT ID_SSFAMILLE FROM ssfamille ORDER BY ID_SSFAMILLE";
+		String requete = "SELECT * FROM ssfamille ORDER BY ID_SSFAMILLE";
 		
 		try {
 			
@@ -88,10 +88,11 @@ public class DAOSSFamille implements DAO<SSFamille> {
 			
 			//tant que...
 			while (result.next()) {
-				listeSousFam.add(this.find(result.getInt("ID_SSFAMILLE")));
+				listeSousFam.add(new SSFamille(result.getInt("ID_SSFAMILLE"), result.getString("NOM_SSFAMILLE")));
 				
 			}
-		    // puis fermeture de la connexion
+			System.out.println(listeSousFam.size() + " Sous Familles créées.");
+			// puis fermeture de la connexion
 		    stmt.close();
 		    System.out.println("Fermeture connexion ok");
 		    	

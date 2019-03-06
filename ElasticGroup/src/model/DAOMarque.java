@@ -7,6 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import bean.Famille;
 import bean.Marque;
 
 /**
@@ -94,7 +95,7 @@ public class DAOMarque implements DAO<Marque> {
 
 		ArrayList<Marque> listeMark = new ArrayList<Marque>();
 
-		String requete = "SELECT ID_FABRICANT FROM fabricant ORDER BY ID_FABRICANT";
+		String requete = "SELECT * FROM fabricant ORDER BY ID_FABRICANT";
 
 		try {
 
@@ -104,9 +105,10 @@ public class DAOMarque implements DAO<Marque> {
 
 			// tant que...
 			while (result.next()) {
-				listeMark.add(this.find(result.getInt("ID_FABRICANT")));
+				listeMark.add(new Marque(result.getInt("ID_FABRICANT"), result.getString("NOM_FABRICANT")));
 
 			}
+			System.out.println(listeMark.size() + " marques créées.");
 			// puis fermeture de la connexion
 			stmt.close();
 			System.out.println("Fermeture connexion ok");
