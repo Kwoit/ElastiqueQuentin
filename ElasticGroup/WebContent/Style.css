@@ -1,0 +1,58 @@
+@charset "UTF-8";
+ body {
+}
+ #catalogue, #login{
+     background-color: #595959 ;
+     color: #ffffff ;}
+ #header {
+     display: inline-block;
+     vertical-align: text-top;
+     text-align: center;
+}
+ #header img{
+     height: 5%;
+     width: 5%;
+     padding-top: 5px;
+     vertical-align: bottom;
+}
+ #header h1{
+     font-family: sans-serif;
+     display: inline;
+}
+ #header label{
+     text-align: left;
+}
+ #login div {
+ 	float : center;
+ }
+
+
+ #sidefiltre {
+     display: inline-block;
+     vertical-align: text-top;
+     width: 25%;
+     text-align: left;
+}
+ #sidefiltre fieldset{
+     max-height: 400px;
+     min-width: 0;
+     text-overflow: clip;
+     overflow-y: auto;
+}
+ #sidefiltre fieldset div{
+     padding-top: 2px;
+     padding-bottom: 2px;
+     min-width: 0;
+     max-width: 100%;
+     white-space: nowrap;
+     text-overflow: clip;
+     overflow: hidden;
+}
+ #sidefiltre fieldset div div{
+     vertical-align: bottom;
+}
+ #magasin {
+     display: inline-block;
+     vertical-align: text-top;
+}
+ 
