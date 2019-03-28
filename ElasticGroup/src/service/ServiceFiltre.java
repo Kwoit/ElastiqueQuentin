@@ -15,6 +15,9 @@ import model.DAOSSFamille;
 public class ServiceFiltre {
 
 	
+	/**
+	 * @return Retourne une liste de "Bloc" filtre. 
+	 */
 	@SuppressWarnings({ "rawtypes", "serial", "unchecked" })
 	public List<BlocFiltre> createFiltre () {
 	//créer des Blocs de Filtre pour chaque famille de filtre

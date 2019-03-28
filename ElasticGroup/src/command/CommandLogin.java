@@ -10,6 +10,9 @@ import service.Service;
 
 public class CommandLogin implements ICommand {
 
+	/**
+	 * @see command.ICommand#execute(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+	 */
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

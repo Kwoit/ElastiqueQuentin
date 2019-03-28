@@ -57,6 +57,12 @@ public class FrontController extends HttpServlet {
 		doProcess(request, response);
 	}
 
+	/**
+	 * @param request
+	 * @param response
+	 * @throws ServletException
+	 * @throws IOException
+	 */
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		//Recuperation de la session active et création si elle n'existe pas
