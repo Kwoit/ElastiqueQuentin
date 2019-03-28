@@ -3,6 +3,5 @@
   <display-name>ElasticGroup</display-name>
   <welcome-file-list>
     <welcome-file>frontcontroller</welcome-file>
-
   </welcome-file-list>
 </web-app>
