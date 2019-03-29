@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * @author Quentin
+ */
 import java.util.ArrayList;
 import java.util.List;
 

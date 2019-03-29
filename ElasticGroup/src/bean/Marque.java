@@ -1,6 +1,10 @@
 package bean;
 
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class Marque implements IFiltrable{
 
 	private int idMarque;

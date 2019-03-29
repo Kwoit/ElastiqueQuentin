@@ -4,6 +4,12 @@ import javax.servlet.http.HttpServletRequest;
 
 import bean.BeanBrowser;
 
+/**
+ * 
+ * @author Quentin
+ *
+ */
+
 public class Service {
 	
 	/**

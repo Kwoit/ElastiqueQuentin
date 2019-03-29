@@ -12,7 +12,7 @@ import bean.SSFamille;
  */
 public class DAOSSFamille implements DAO<SSFamille> {
 
-	/* (non-Javadoc)
+	/**
 	 * @see modele.DAO#create(java.lang.Object)
 	 */
 	@Override
@@ -21,7 +21,7 @@ public class DAOSSFamille implements DAO<SSFamille> {
 		return null;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see modele.DAO#delete(java.lang.Object)
 	 */
 	@Override
@@ -30,7 +30,7 @@ public class DAOSSFamille implements DAO<SSFamille> {
 		return null;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see modele.DAO#update(java.lang.Object)
 	 */
 	@Override
@@ -39,7 +39,7 @@ public class DAOSSFamille implements DAO<SSFamille> {
 		return null;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see modele.DAO#find(int)
 	 */
 	@Override
@@ -70,7 +70,7 @@ public class DAOSSFamille implements DAO<SSFamille> {
 		return ssFam;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see modele.DAO#findAll()
 	 */
 	@Override

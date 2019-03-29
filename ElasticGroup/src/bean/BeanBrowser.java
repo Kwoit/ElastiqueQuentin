@@ -4,7 +4,11 @@ import java.util.List;
 
 import service.ServiceFiltre;
 
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class BeanBrowser {
 	//User Bean
 	private User client;

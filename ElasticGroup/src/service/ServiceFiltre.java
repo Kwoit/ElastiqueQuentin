@@ -12,6 +12,12 @@ import model.DAOFamille;
 import model.DAOMarque;
 import model.DAOSSFamille;
 
+/**
+ * 
+ * @author Quentin
+ *
+ */
+
 public class ServiceFiltre {
 
 	

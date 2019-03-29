@@ -8,6 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import bean.User;
 import service.Service;
 
+/**
+ * 
+ * @author Quentin
+ *
+ */
+
 public class CommandLogin implements ICommand {
 
 	/**

@@ -1,5 +1,9 @@
 package bean;
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public interface IFiltrable {
 
 	public int getId();

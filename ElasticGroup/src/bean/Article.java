@@ -1,5 +1,9 @@
 package bean;
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class Article extends Produit {
 
 	private Couleur couleur;

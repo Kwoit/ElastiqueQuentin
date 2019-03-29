@@ -1,5 +1,10 @@
 package bean;
 
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class Couleur implements IFiltrable{
 
 	private int idColor;

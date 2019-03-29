@@ -13,6 +13,7 @@ import bean.BeanBrowser;
 import command.ICommand;
 
 /**
+ * @author Quentin
  * Servlet implementation class FrontController
  */
 @WebServlet("/frontcontroller")

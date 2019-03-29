@@ -3,7 +3,11 @@ package bean;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class BlocFiltre {
 
 	private int idBlocFiltre;

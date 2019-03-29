@@ -1,6 +1,10 @@
 package bean;
 
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class SSFamille implements IFiltrable{
 
 	private int idSSFamille;

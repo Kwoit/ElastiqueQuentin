@@ -1,5 +1,9 @@
 package bean;
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class User {
 //attribut
 	private String log;

@@ -11,6 +11,12 @@ import bean.BlocFiltre;
 import bean.Filtre;
 import service.Service;
 
+/**
+ * 
+ * @author Quentin
+ *
+ */
+
 public class CommandFiltre implements ICommand {
 
 	/**

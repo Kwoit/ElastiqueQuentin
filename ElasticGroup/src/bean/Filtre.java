@@ -1,5 +1,9 @@
 package bean;
-
+/**
+ * 
+ * @author Quentin
+ *
+ */
 public class Filtre {
 
 	private int idFiltre;
