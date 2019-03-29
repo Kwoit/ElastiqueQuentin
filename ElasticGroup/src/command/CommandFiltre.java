@@ -18,29 +18,27 @@ public class CommandFiltre implements ICommand {
 	 */
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		//debug
-		System.out.println("dans la commandFiltre");
-		System.out.println(request.getParameterValues("Famille Elastique Loom") + "le test param");
+			throws ServletException, IOException {		
 		
-		
+		//on passe en revue tout les filtre de chaque BlockFiltre
 		for (BlocFiltre currBlock: (List<BlocFiltre>) Service.getSessionBeanBrowser(request).getListBlocFiltre()) {
 			
-			System.out.println("looping BlocFiltre");
 			
 	    	for (Filtre currFiltre: (List<Filtre>) currBlock.getListFiltre()) {
 	    		
-	    		//debug
-	    		System.out.println("looping Filtre");
-	    		System.out.println(currBlock.getLibelleBlocFiltre() + " " + currFiltre.getLibelleFiltre());
-	    		
-	    		if(request.getParameterValues(currBlock.getLibelleBlocFiltre() + " " + currFiltre.getLibelleFiltre() )!=null) {
+	    		//si le filtre est cocher lors de l'envoie de la requete on passe son état sur coché dans le BeanBrowser
+	    		//sinon on passe son état sur décocher
+	    		if(request.getParameterValues(currBlock.getIdBlocFiltre() + " " + currFiltre.getIdFiltre() )!=null) {
 	    			currFiltre.setChecked(true);
 	    		}else {	
 	    			currFiltre.setChecked(false);
 	    		}
 	    	}    		
     	}	
+		
+		//puis retour sur le catalogue
+		
+		//construction de la requetes SQL en fonction des Filtres cochés
 		
 		return "/WEB-INF/jsp/catalogue.jsp";	
 		}

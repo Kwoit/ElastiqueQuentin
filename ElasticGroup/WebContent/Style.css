@@ -82,8 +82,6 @@
 
 
  #sidefiltre {
-     display: inline-block;
-     vertical-align: text-top;
      width: 25%;
      text-align: left;
 }
@@ -107,7 +105,10 @@
 }
  #magasin {
      display: inline-block;
->>>>>>> branch 'master' of https://github.com/Florian-PC/repository.git
      vertical-align: text-top;
+}
+
+#catalogue span{
+	display: inline-block;
 }
  

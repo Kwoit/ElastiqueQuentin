@@ -72,6 +72,7 @@ public class FrontController extends HttpServlet {
 			session.setAttribute("beanBrowser", new BeanBrowser());
 		}		
 		
+		System.out.println("le print de la vérité");
 		//recupération de l'url appelée
 		String cmd = request.getParameter("cmd");
 				
